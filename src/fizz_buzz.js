@@ -1,13 +1,13 @@
 var tableau = [];
 
 function multiple_3_et_5() {
-    for (var i = 0; i < 100; i++) {
+    for (var i = 1; i <= 100; i++) {
         if (i % 3 === 0) {
-            tableau[i] = "Fizz";
+            tableau[i-1] = "Fizz";
         }
 
         if (i % 5 === 0){
-            tableau[i] = "Buzz";
+            tableau[i-1] = "Buzz";
         }else{
             tableau[i]=i;
         }
