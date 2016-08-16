@@ -1,5 +1,5 @@
 /*
-**Conception sans utilisée le tableau***
+ **Conception sans utilisée le tableau***
  */
 function multiple_3_et_5() {
     var fizz = false;
@@ -14,7 +14,7 @@ function multiple_3_et_5() {
         if (fizz && buzz) // Condition pour les multiples de 3 et 5
         {
             document.write("FizzBuzz");// Permet d'afficher FizzBuzz pour i multiple de 3 et de 5 sur une page HTML
-            document.write("<br>");
+            document.write("<br/>");
 
             /**
              *** Pour afficher le résultat sur la console, nous pouvons également utiliser **console.log("FizzBuzz");
@@ -22,24 +22,19 @@ function multiple_3_et_5() {
              **/
 
         }
-        else
-        {
-            if (fizz)
-            {
+        else {
+            if (fizz) {
                 document.write("Fizz");
                 document.write("<br>");
 
             }
-            else
-            {
-                if (buzz)
-                {
+            else {
+                if (buzz) {
                     document.write("Buzz");
                     document.write("<br>");
 
                 }
-                else
-                {
+                else {
                     document.write(i);
                     document.write("<br>");
                 }
@@ -50,3 +45,5 @@ function multiple_3_et_5() {
 
     }
 }
+multiple_3_et_5();
+
