@@ -4,10 +4,10 @@
  **/
 var a = 3;
 var b = 5;
-function multiple_3_et_5_2() {
+var fizz_buzz = function multiple_3_et_5_2() {
     var ret_array = [];
     for (var i = 1; i <= 100; i++) {
-        if (i % a === 0 && i % b === 0) // Condition pour les multiples de 3 et 5
+        if (i % a === 0 && i % b === 0) // Condition pour les multiples de 3 et 5, version 3
         {
             ret_array.push("FizzBuzz");
 
@@ -16,10 +16,10 @@ function multiple_3_et_5_2() {
              console.log("<br>");***
              **/
         }
-        else if (i % a === 0) { // Condition pour les multiples de 3
+        else if (i % a === 0) { // Condition pour les multiples de 3, version 1
             ret_array.push("Fizz");
         }
-        else if (i % b === 0) { // Condition pour les multiples de 5
+        else if (i % b === 0) { // Condition pour les multiples de 5, version 2
             ret_array.push("Buzz")
         }
         else ret_array.push(i);
@@ -27,4 +27,4 @@ function multiple_3_et_5_2() {
     }
     return ret_array;
 }
-module.exports = multiple_3_et_5_2;
+module.exports = fizz_buzz;
